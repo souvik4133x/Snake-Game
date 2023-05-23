@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="restart()" class="button">Reset</button>
+            <button onclick="pause()" class="pause button" disabled="true">Pause</button>
+            <button onclick="easy()" class="btn1 button">Easy</button>
+            <button onclick="medium()" class="btn2 button">Medium</button>
+            <button onclick="hard()" class="btn3 button">Hard</button>
+        </div>
+        <div class="game-details">
+            <span class="score">score:0</span>
+            <span class="highscore">HighScore:0</span>
+        </div>
+
+        <div class="gameboard"></div>
+       <div class="controls">
+            <i data-key="ArrowDown" class="fa fa-arrow-down"></i>
+            <i data-key="ArrowLeft" class="fa fa-arrow-left"></i>
+            <i data-key="ArrowRight" class="fa fa-arrow-right"></i>
+            <i data-key="ArrowUp" class="fa fa-arrow-up"></i>
+        </div>
+    
+    </div>
+</body>
+
+</html>
